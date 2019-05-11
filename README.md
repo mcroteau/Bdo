@@ -1,3 +1,5 @@
+![Hilo Open Commerce](http://openabc.xyz/images/seal-icon.png)
+
 # Bdo (Seal) CRM
 
 #### Also known as Bdo
