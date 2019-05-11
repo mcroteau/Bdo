@@ -1,0 +1,14 @@
+app.context=seal
+company.currency=USD
+company.country.code=us
+company.name=Your Company Name
+company.phone=
+company.email=
+mail.smtp.username=
+mail.smtp.password=
+mail.smtp.host=smtp.datatundra.com
+mail.smtp.supportEmail=
+mail.smtp.port=587
+mail.smtp.auth=true
+mail.smtp.starttls.enabled=true
+mail.smtp.adminEmail=

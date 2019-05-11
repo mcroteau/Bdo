@@ -1,0 +1,465 @@
+<html>
+<head>
+	<title>ABC : Simple Open Source SMB Software</title>
+	
+	<meta name="description" content="ABC : Simple Open Source SMB Software">
+	
+	<meta name="keywords" content="hilo commerce, java ecommerce, java crm, servlet crm, servlet ecommerce, spring ecommerce, spring crm, open source smb software, smb software">
+	
+	<script src="js/jquery.js"></script>
+	
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+<body>
+<style type="text/css">
+*{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight:500;
+	color:#393838;
+}
+body{
+	padding:0px;
+	margin:0px;
+}	
+#outer-container{
+	width:1020px;
+	height:1020px;
+	position:relative;
+	border:solid 0px #ddd;
+}
+#abc-logo{
+	position:absolute;
+	top:112px;
+	top:79px;
+	left:219px;
+}
+#seal-logo{
+	position:absolute;
+	top:378px;
+	top:345px;
+	left:156px;
+}
+#hilo-logo{
+	position:absolute;
+	top:278px;
+	top:245px;
+	left:578px;
+}
+
+#seal-community{
+	position:absolute;
+	top:503px;
+	left:263px;
+}
+
+
+#hilo-community{
+	position:absolute;
+	top:403px;
+	right:243px;
+}
+
+
+#seal-project{
+	width:300px;
+	top:659px;
+	top:653px;
+	left:611px;
+	font-size:14px;
+	position:absolute;
+	line-height:1.2;
+}
+
+
+#hilo-project{
+	width:300px;
+	top:659px;
+	top:653px;
+	left:203px;
+	font-size:14px;
+	position:absolute;
+	line-height:1.2;
+}
+
+.logo{
+	color:#000;
+	font-size:13px;
+	display:block;
+	position:relative;
+	z-index:2000;
+	cursor:pointer;
+	cursor:hand;
+}
+.logo:hover{
+}
+
+.logo .tagline{
+	margin-top:4px;
+	margin-left:95px;
+	line-height:1.22;
+	display:block;
+}
+
+.logo .tagline.hilo{
+	margin-top:7px;
+	margin-left:100px;
+}
+
+
+.logo .tagline.abc{
+	margin-left:0px;
+	font-size:19px;
+	font-weight:lighter;
+}
+
+.logo img{
+	display:block;
+}
+
+#navigation{
+	top:101px;
+	top:68px;
+	right:41px;
+	list-style:none;
+	position:absolute;
+}
+#navigation li{
+	margin-left:29px;
+	float:left;
+}
+#navigation li a{
+	font-size:15px;
+	font-weight:normal;
+	display:inline-block;
+}
+
+#hilo-pricing{
+	right:17px;
+	top:410px;
+	top:377px;
+	position:absolute;
+	text-align:right;
+}
+
+#seal-pricing{
+	left:417px;
+	top:484px;
+	top:451px;
+	position:absolute;
+	text-align:right;
+}
+
+
+.project{
+	font-size:76px;
+	font-weight:bold;
+	padding:0px;
+	margin:5px;
+	float:left;
+	line-height:1.0;
+}
+
+
+.logo-icon{
+	float:left;
+	margin-top:9px;
+	width:87;
+}
+
+.amount{
+	font-size:67px;
+	font-weight:bold;
+	line-height:1.0;
+}
+
+.amount.small{
+	font-size:37px;
+	font-weight:bold;
+}
+.amount.hilo{
+	margin-right:30px;
+}
+
+.dollar, .plus{
+	font-size:31px;
+}
+
+.dollar.small, .plus.small{
+	font-size:21px;
+}
+
+
+.information{
+	font-size:13px;
+	text-align:left;
+	margin-left:24px;
+	padding:0px;
+	margin-top:0px;
+}
+
+#about-us{
+	width:450px;
+	top:240px;
+	right:200px;
+	position:absolute;
+}
+#about-us p{
+	font-size:17px;
+}
+
+#contact-us{
+	top:200px;
+	right:200px;
+	position:absolute;
+}
+
+#technical-details{
+	width:530px;
+	top:200px;
+	right:200px;
+	position:absolute;
+}
+p{
+	line-height:1.3em;
+}
+ul{
+	list-style:none;
+}
+
+.navigation{
+	padding-bottom:10px;
+}
+
+a{
+	display:inline-block;
+	cursor:pointer !important;
+	text-decoration:none;
+}
+a:hover{
+ 	cursor:pointer !important;
+	text-decoration:none;
+}
+
+a.active{
+	border-bottom:solid 1px #E67363;
+}
+
+
+.hidden{
+	display:none;
+}
+.clear{
+	clear:both;
+}
+.p{
+	margin-left:9px !important;
+}
+</style>
+
+<div id="outer-container">
+	
+	<a href="javascript:" id="abc-logo" class="logo abc navigation" ref="HOME">
+		<img src="images/abc-icon.png" class="logo-icon" style="width:20%;"/>
+		<span class="project" style="margin:4px 0px 0px -8px; font-size:57px;">ABC</span>
+		<br class="clear"/>
+		<span class="tagline abc">Simple Open Source SMB Software</span>
+	</a>
+	
+
+	<ul id="navigation">
+		<li><a href="javascript:" class="navigation active" ref="HOME" id="home-ref">Home</a></li>
+		<li><a href="javascript:" class="navigation" ref="ABOUT">About Us</a></li>
+		<li><a href="javascript:" class="navigation" ref="TECHNICAL">Technical Details</a></li>
+	</ul>
+	
+	
+	<div id="hilo-logo" class="logo hideable home">
+		<img src="images/hilo-icon.png" class="logo-icon"/>
+		<span class="project p" >Hilo</span>
+		<!--<span class="pull-left">alhpa</span>-->		
+		<br class="clear"/>
+		<span class="tagline hilo">Simple Open Source <br/> Java/Groovy Online Commerce
+		</span>
+	</div>
+	
+	<div id="seal-logo" class="logo hideable home">
+		<img src="images/seal-icon.png" class="logo-icon"/>
+		<span class="project">Bdo</span>
+	    <span class="pull-left">alpha</span>
+		<br class="clear"/>
+		<span class="tagline seal">Simple Open Source<br/> Java/Groovy CRM
+			<br/>Also known as <strong>Seal</strong></span>
+	</div>
+
+	<div id="seal-community" class="community">
+		<a class="github-button" href="https://github.com/mcroteau/Bdo" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star mcroteau/Bdo on GitHub">Star</a>
+	</div>
+
+	<div id="hilo-community" class="community">
+		<a class="github-button" href="https://github.com/mcroteau/hilo" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star mcroteau/Hilo on GitHub">Star</a>
+	</div>
+
+
+
+	<div id="hilo-pricing" class="pricing hideable home">
+		<span class="dollar small">$</span>
+		<span class="amount small">10,170</span>
+		<span class="plus small">+</span>
+		<br/>
+		<span class="dollar">$</span>
+		<span class="amount hilo">703</span>
+		<p class="information">A month<br/>
+			Free Upgrades<br/>
+			$10,170 initial<br/>setup with design
+		</p>
+	</div>
+	
+	
+	
+	<div id="seal-pricing" class="pricing hideable home">
+		<span class="dollar">$</span>
+		<span class="amount hilo">503</span>
+		<p class="information">A month<br/>
+			Free Upgrades<br/>
+			100 Users
+		</p>
+	</div>
+	
+	
+	
+	
+	<div id="seal-project" class="hideable home">
+		<h1>Bdo (Seal) CRM</h1>
+		<h3>Also known as Seal</h3>
+
+		<p>Bdo is a simple Open Source Customer Relationship Management (CRM) package built for people and organizations who want to manage a small to mid sized sales team.</p>
+
+		<h3>What is Bdo (Seal) if you are a business owner</h3>
+		<p>Bdo helps you manage your sales cycles, prospects, clients and customers. It allows you to measure your activities giving you a detailed view into your actions and how productive they are. Seal also serves as a centralized location helping you manage everything regarding a prospect or client. Hire ABC to deploy, run and manage your instance or configure it yourself. It's as simple as a command (minimal setup version).</p>
+	</div>
+
+
+	<div id="hilo-project" class="hideable home">
+		<h1>Hilo Online Ordering</h1>
+		<h3>Also known as HLN</h3>
+
+		<p>Hilo is a simple Open Source Online Ordering and eCommerce solution. It is built of people and organizations that want to manage a mid sized online presence. It leverages the best in payment processing Stripe and Braintree. It is a reality, you could be setup, configured and running within 30 minutes. All you need is a Stripe account.</p>
+
+		<h3>What is Hilo if you are a business owner</h3>
+		<p>HLN is a simple Online Ordering, eCommerce and essentially a CMS project rolled into one. It allows you to manage online customers, products and orders. Hilo also "links" to Bdo (Seal) CRM, a customer relationship management tool which allows you to manage prospects, customers and clients. You can be up and running within minutes with minimal configuration version.</p>
+
+
+
+		<div style="height:200px;"></div>
+
+	</div>
+	
+	
+		
+	<div id="about-us" class="hidden hideable">
+
+		<h1>About Us</h1>
+
+		<p>ABC is a software development boutique which specializes in open source technologies but with an emphasis in Java.</p>
+
+		<p>We write custom J2EE SMB applications that run in the cloud and manage open source projects Hilo &amp; Bdo (Seal).</p>
+		
+		<p>We Love :</p>
+		
+		<p>Java, Groovy, Grails, Python, Spring, Apache, Tomcat, Maven, Postgres, MySQL, Javascript, jQuery</p>
+
+		<h1>
+			<a href="mailto:croteau.mike@gmail.com@gmail.com" style="color:blue">croteau.mike@gmail.com</a><br/>
+			(907) 687-9557
+		</h1>
+	</div>
+
+	
+	<div id="technical-details" class="hidden hideable">
+		<h1>What is Bdo (Seal) and Hilo if you are a developer both projects are J2EE, they are:</h1>
+
+		<ul>
+			<li>Spring</li>
+			<li>Hibernate</li>
+			<li>Gradle</li>
+			<li>Sitemesh</li>
+			<li>Groovy</li>
+		</ul>
+
+		<p>The framework used to develop the project is called Grails Yes, another framework, Grails is so special though that it can be considered a productivity tool instead of a framework. A light tool that sits on top of J2EE project structure where Groovy is leveraged and when deployed becomes a J2EE project.</p>
+
+		<p>Grails is domain driven, leverages Groovy which is an abstraction of Java (you can write Java code within a Groovy class file), object oriented and in summary is a productivity tool. Attempt to write the same logic in any other technology stack of choice without missing out on Java's greatest assets and you're talking years of development instead of months. Customizations are quick as well. Everything, Models, Views and Controllers are nicely configured/glued together to create one seemless development experience.</p>
+
+		<p><a href="https://www.apress.com/us/book/9781590599952" target="_blank" style="text-decoration:underline;color:blue;">The Definitive Guide to Grails</a>. is a little dated, but gives a great run down of MVC (Model View Controller setup), Grails and why it is important. Not very many assumptions are made on how much you know, you will be starting from scratch with this book.</p>
+
+		<p>Seal deploys to an Java application server of choice or can be run locally in an embedded container You can use many of the RDBM systems out there (Postgres, MySQL) and have been configured to work with Mongo and others.</p>
+
+	</div>
+</div>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40862316-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40862316-9');
+</script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var $hideable = $(".hideable")
+		var $homeLink = $("#home-ref")
+		var $navigation = $(".navigation")
+		
+		var $home = $(".home")
+		var $about = $("#about-us")
+		var $contact = $("#contact-us")
+		var $technical = $("#technical-details")
+		var $community = $(".community")
+
+		
+		$navigation.click(function(event){
+			$hideable.hide()
+			var $target = $(event.target)
+			
+			$navigation.removeClass("active")
+			$target.addClass("active")
+			
+			var ref = $target.attr("ref")
+			
+			switch(ref){
+				case "HOME" : 
+					$home.fadeIn("fast", function(){})
+					$community.show()
+					break;
+				case "ABOUT" : 
+					$about.fadeIn("fast", function(){})
+					$community.hide()
+					break;
+				case "CONTACT" : 
+					$contact.fadeIn("fast", function(){})
+					$community.hide()
+					break;
+				case "TECHNICAL" : 
+					$technical.fadeIn("fast", function(){})
+					break;
+				default:
+					$home.fadeIn("fast", function(){})
+					$community.hide()
+					break;
+			}
+			
+		})
+		
+		
+	});
+</script>
+	
+	
+	
+</body>
+</html>
