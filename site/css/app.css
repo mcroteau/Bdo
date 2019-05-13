@@ -1,0 +1,242 @@
+*{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight:500;
+	color:#393838;
+}
+body{
+	padding:0px;
+	margin:0px;
+}	
+#outer-container{
+	width:1020px;
+	height:1020px;
+	position:relative;
+	border:solid 0px #ddd;
+}
+#abc-logo{
+	position:absolute;
+	top:112px;
+	top:79px;
+	left:219px;
+}
+#seal-logo{
+	position:absolute;
+	top:378px;
+	top:345px;
+	left:156px;
+}
+#hilo-logo{
+	position:absolute;
+	top:278px;
+	top:245px;
+	left:578px;
+}
+
+#seal-community{
+	position:absolute;
+	top:503px;
+	left:263px;
+}
+
+
+#hilo-community{
+	position:absolute;
+	top:403px;
+	right:243px;
+}
+
+
+#seal-project{
+	width:300px;
+	top:659px;
+	top:653px;
+	left:611px;
+	font-size:14px;
+	position:absolute;
+	line-height:1.2;
+}
+
+
+#hilo-project{
+	width:300px;
+	top:659px;
+	top:653px;
+	left:203px;
+	font-size:14px;
+	position:absolute;
+	line-height:1.2;
+}
+
+.logo{
+	color:#000;
+	font-size:13px;
+	display:block;
+	position:relative;
+	z-index:2000;
+	cursor:pointer;
+	cursor:hand;
+}
+.logo:hover{
+}
+
+.logo .tagline{
+	margin-top:4px;
+	margin-left:95px;
+	line-height:1.22;
+	display:block;
+}
+
+.logo .tagline.hilo{
+	margin-top:7px;
+	margin-left:100px;
+}
+
+
+.logo .tagline.abc{
+	margin-left:0px;
+	font-size:19px;
+	font-weight:lighter;
+}
+
+.logo img{
+	display:block;
+}
+
+#navigation{
+	top:101px;
+	top:68px;
+	right:41px;
+	list-style:none;
+	position:absolute;
+}
+#navigation li{
+	margin-left:29px;
+	float:left;
+}
+#navigation li a{
+	font-size:15px;
+	font-weight:normal;
+	display:inline-block;
+}
+
+#hilo-pricing{
+	right:17px;
+	top:410px;
+	top:377px;
+	position:absolute;
+	text-align:right;
+}
+
+#seal-pricing{
+	left:417px;
+	top:484px;
+	top:451px;
+	position:absolute;
+	text-align:right;
+}
+
+
+.project{
+	font-size:76px;
+	font-weight:bold;
+	padding:0px;
+	margin:5px;
+	float:left;
+	line-height:1.0;
+}
+
+
+.logo-icon{
+	float:left;
+	margin-top:9px;
+	width:87;
+}
+
+.amount{
+	font-size:67px;
+	font-weight:bold;
+	line-height:1.0;
+}
+
+.amount.small{
+	font-size:37px;
+	font-weight:bold;
+}
+.amount.hilo{
+	margin-right:30px;
+}
+
+.dollar, .plus{
+	font-size:31px;
+}
+
+.dollar.small, .plus.small{
+	font-size:21px;
+}
+
+
+.information{
+	font-size:13px;
+	text-align:left;
+	margin-left:24px;
+	padding:0px;
+	margin-top:0px;
+}
+
+#about-us{
+	width:450px;
+	top:240px;
+	right:200px;
+	position:absolute;
+}
+#about-us p{
+	font-size:17px;
+}
+
+#contact-us{
+	top:200px;
+	right:200px;
+	position:absolute;
+}
+
+#technical-details{
+	width:530px;
+	top:200px;
+	right:200px;
+	position:absolute;
+}
+p{
+	line-height:1.3em;
+}
+ul{
+	list-style:none;
+}
+
+.navigation{
+	padding-bottom:10px;
+}
+
+a{
+	display:inline-block;
+	cursor:pointer !important;
+	text-decoration:none;
+}
+a:hover{
+ 	cursor:pointer !important;
+	text-decoration:none;
+}
+
+a.active{
+	border-bottom:solid 1px #E67363;
+}
+
+
+.hidden{
+	display:none;
+}
+.clear{
+	clear:both;
+}
+.p{
+	margin-left:9px !important;
+}
