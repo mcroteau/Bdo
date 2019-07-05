@@ -26,12 +26,20 @@
 	
 	<link rel="stylesheet" href="${resource(dir:'css', file:'admin.css')}" />
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 	
 	<g:layoutHead/>
 	
 	
 <style type="text/css">	
-
+	@font-face {
+		font-family: 'bd0-regular';
+		font-weight: 400;
+		font-style: italic;
+		src: url("${resource(dir:'fonts/bd0_regular.woff')}") format("woff");
+		unicode-range: U+0-7F,U+A0,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
+	}
 	@font-face { 
 		font-family: Roboto-Regular; 
 		src: url("${resource(dir:'fonts/Roboto-Regular.ttf')}"); 
@@ -159,12 +167,12 @@
 		
 		<div id="content-container">
 			
-			<a href="http://openabc.xyz" target="_blank" id="abc-link" 
+			<!--<a href="http://openabc.xyz" target="_blank" id="abc-link" 
 				title="ABC: Simple Open Source SMB Software">
 				<img src="${resource(dir:'images/seal-icon.png')}"
 					 style="height:inherit;width:inherit;outline:none;display:inline-block"/>
 				<span style="display:none;">BDO</span>
-			</a>
+			</a>-->
 			
 			
 			<div id="header">

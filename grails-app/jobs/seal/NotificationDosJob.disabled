@@ -1,0 +1,16 @@
+package seal
+
+class NotificationDosJob {
+	
+	def notificationService
+
+    static triggers = {
+      	simple startDelay: 60000 * 2, repeatInterval: 20000
+    }
+
+    void execute() {
+    	println "********** Dos ***********"
+    	notificationService.run()
+    }
+	
+}

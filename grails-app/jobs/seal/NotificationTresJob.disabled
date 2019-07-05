@@ -1,0 +1,16 @@
+package seal
+
+class NotificationTresJob {
+	
+	def notificationService
+
+    static triggers = {
+      	simple startDelay: 60000 * 3, repeatInterval: 30000
+    }
+
+    void execute() {
+    	println "********** Tres ***********"
+    	notificationService.run()
+    }
+	
+}

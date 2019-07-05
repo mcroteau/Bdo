@@ -2,14 +2,14 @@ body,html{
 	text-align:center;
 	padding:0px;
 	margin:0px;
-	font-family:Arial;
 	background:#fff;
+	font-family: 'Open-Sans', sans-serif;
+	font-size:21px;
 }
 
 body, html, div,
 span, p, table, td, th{
 	font-size:14px;
-	/**font-family:Roboto-Regular;**/
 	color: rgba(0,0,0,0.87);
 }
 
@@ -41,6 +41,10 @@ span, p, table, td, th{
 	/**border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;**/
+
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.08);
 	border:solid 1px #ddd;
 	border:solid 1px #273238;
 	border:solid 1px #bcddd3;/**TODO**/
@@ -430,7 +434,7 @@ h1.maintenance-header{
 .form-label{
 	float:left;
 	font-size:12px;
-	font-size:16px;/**trying something**/
+	font-size:17px;/**trying something**/
 	text-align:right;
 	display:inline-block;
 	vertical-align:middle;

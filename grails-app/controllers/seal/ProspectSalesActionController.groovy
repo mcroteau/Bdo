@@ -9,6 +9,7 @@ import io.seal.Prospect
 import io.seal.SalesAction
 import io.seal.Account
 import groovy.time.TimeCategory
+import static java.util.Calendar.*
 
 class ProspectSalesActionController {
 	
@@ -102,7 +103,10 @@ class ProspectSalesActionController {
 			prospectSalesActionInstance.account = account
 			if(params.reminder == "true"){
 				use( TimeCategory ) {
-					prospectSalesActionInstance.reminderDate = date - prospectSalesActionInstance.reminderTime.minutes + 1.seconds
+					def reminderDate = date - prospectSalesActionInstance.reminderTime.minutes
+					reminderDate[SECOND] = 0
+					remdinerDate[MILLISECOND] = 0
+					prospectSalesActionInstance.reminderDate = reminderDate
 				}
 			}else{
 				prospectSalesActionInstance.reminderDate = null
@@ -217,7 +221,10 @@ class ProspectSalesActionController {
 		prospectSalesActionInstance.actionDate = date
 		if(params.reminder == "true"){
 			use( TimeCategory ) {
-				prospectSalesActionInstance.reminderDate = date - prospectSalesActionInstance.reminderTime.minutes + 1.seconds
+				def reminderDate = date - prospectSalesActionInstance.reminderTime.minutes
+				reminderDate[SECOND] = 0
+				remdinerDate[MILLISECOND] = 0
+				prospectSalesActionInstance.reminderDate = reminderDate
 				println "prospectSalesActionInstance.reminderDate ${prospectSalesActionInstance.reminderDate}"
 			}
 		}else{
