@@ -105,7 +105,7 @@ class ProspectSalesActionController {
 				use( TimeCategory ) {
 					def reminderDate = date - prospectSalesActionInstance.reminderTime.minutes
 					reminderDate[SECOND] = 0
-					remdinerDate[MILLISECOND] = 0
+					reminderDate[MILLISECOND] = 0
 					prospectSalesActionInstance.reminderDate = reminderDate
 				}
 			}else{
@@ -223,7 +223,7 @@ class ProspectSalesActionController {
 			use( TimeCategory ) {
 				def reminderDate = date - prospectSalesActionInstance.reminderTime.minutes
 				reminderDate[SECOND] = 0
-				remdinerDate[MILLISECOND] = 0
+				reminderDate[MILLISECOND] = 0
 				prospectSalesActionInstance.reminderDate = reminderDate
 				println "prospectSalesActionInstance.reminderDate ${prospectSalesActionInstance.reminderDate}"
 			}

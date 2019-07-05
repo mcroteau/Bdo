@@ -140,7 +140,7 @@ Its impossible, sex
 
 	@Secured([ApplicationConstants.ROLE_ADMIN, ApplicationConstants.ROLE_SALESMAN])
 	def overview_sequences(){
-
+		println "here..."
 		def salesEfforts = SalesEffort.findAllByRecording(false)
 		def effortMap = [:]
 
@@ -167,12 +167,14 @@ Its impossible, sex
 		}
 
 		def csv = ""
+		println "effortMap ${effortMap}"
+
 		effortMap.each{
-			println "${it.properties}"
+			println "${it.key}, ${it.value}"
 			csv += it.key + "," + it.value + "\n"
 		}
 
-		//println csv
+		println "csv + ${csv}"
 
 		render csv
 	}

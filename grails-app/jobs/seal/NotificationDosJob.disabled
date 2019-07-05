@@ -5,7 +5,7 @@ class NotificationDosJob {
 	def notificationService
 
     static triggers = {
-      	simple startDelay: 60000 * 2, repeatInterval: 20000
+      	simple startDelay: 60000 * 2, repeatInterval: 60000 * 60
     }
 
     void execute() {

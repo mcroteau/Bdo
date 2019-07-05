@@ -50,9 +50,9 @@ class BootStrap {
 
 		if(Environment.current == Environment.DEVELOPMENT) {
 			createMockProspects()
-			//createMockSalesmen()
-			//createMockSalesEfforts(true)
-			//createMockSalesEfforts(false)
+			createMockSalesmen()
+			createMockSalesEfforts(true)
+			createMockSalesEfforts(false)
 		}
 		
 		n()

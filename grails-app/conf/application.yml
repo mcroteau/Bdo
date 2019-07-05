@@ -1,7 +1,7 @@
 server:
     contextPath: /bdo
-    #port: 9463 
-    port: 8080
+    port: 9463 
+    #port: 8080
     session:
         timeout : 7200
 ---
