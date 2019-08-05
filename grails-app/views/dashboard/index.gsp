@@ -452,7 +452,7 @@ $(document).ready(function(){
         percentageInnerCutout : 76.5, 
         animationSteps : 20,
         animationEasing : "easeOutQuart",
-        animateRotate : true,
+        animateRotate : false,
         animateScale : false,
 
     	onAnimationComplete: function(){ },
