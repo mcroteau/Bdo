@@ -49,15 +49,20 @@ class BootStrap {
 		createSalesActions()
 
 		if(Environment.current == Environment.DEVELOPMENT) {
-			///createMockProspects()
-			//createMockSalesmen()
-			//createMockSalesEfforts(true)
-			//createMockSalesEfforts(false)
+			createDevelopmentData()
 		}
 		
 		n()
     }
 	
+	def createDevelopmentData(){
+		createMockProspects()
+		createMockSalesmen()
+		createMockSalesEfforts(true)
+		createMockSalesEfforts(false)
+	}
+
+
 	
 	def createMockSalesmen(){
 		
