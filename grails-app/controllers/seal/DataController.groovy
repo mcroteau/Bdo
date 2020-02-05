@@ -32,11 +32,6 @@ class DataController {
     
 	def commonUtilities
 
-/**
-WAHT IS IT YOU NEED ME TO DO
-Its impossible, sex
-**/
-
 	@Secured([ApplicationConstants.PERMIT_ALL])
 	def actions(){
 		def oneMinute
@@ -45,27 +40,25 @@ Its impossible, sex
 		notificationTime[Calendar.SECOND] = 0
 		notificationTime[Calendar.MILLISECOND] = 0
 
+		use( TimeCategory ) {
+		    oneMinute = notificationTime - 5.minutes
+		}
+
 		def salesman = Account.findByUsername("croteau.mike+admin@gmail.com")
 		println salesman
 
 		println notificationTime.format("HH:mm")
 		println notificationTime
 
-		def salesActions = ProspectSalesAction.findAllByRemindedAndReminderDateAndAccountAndStatus(false, notificationTime, salesman, ApplicationConstants.SALES_ACTION_ACTIVE)
+		def salesActions = ProspectSalesAction.findAllByRemindedAndReminderDateBetweenAndAccountAndStatus(false, oneMinute, notificationTime, salesman, ApplicationConstants.SALES_ACTION_ACTIVE)
 
 		println "sales actions : " + salesActions
 
 
-		/*
-		All of these guys are...incriminating
-		The bracelets are just bracelets
-		*/
-
 		def data = []
 		salesActions.each { salesAction ->
 			def prospect = salesAction.prospect 
-			//THERES SOMEONE IN FAIRBANKS HES OR SHE IS AT THE MUSEUM
-			//MAY 18 2019
+
 			def action = [:]
 			action.action = [:]
 			action.action.time = salesAction.actionDate.format("HH:mm")
