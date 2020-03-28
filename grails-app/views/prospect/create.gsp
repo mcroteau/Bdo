@@ -143,18 +143,6 @@
 			</div>
 
 
-			<!--
-			<div class="form-row">
-				<span class="form-label full">Contact Title</span>
-				<span class="input-container">
-					<g:textField class="form-control twohundred"  name="contactTitle" value="${prospectInstance?.contactTitle}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-
-				-->
-
-
 			<div class="form-row">
 				<span class="form-label full">Phone</span>
 				<span class="input-container">
@@ -163,56 +151,7 @@
 				<br class="clear"/>
 			</div>
 			
-			<!--
-			<div class="form-row">
-				<span class="form-label full">Phone Extension</span>
-				<span class="input-container">
-					<g:textField class="onefifty form-control"  name="phoneExtension" value="${prospectInstance?.phoneExtension}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-				-->
-			
-			<!--
-			<div class="form-row">
-				<span class="form-label full">Cell Phone</span>
-				<span class="input-container">
-					<g:textField class="twofifty form-control"  name="phone" value="${prospectInstance?.cellPhone}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-			-->
-				
-			<!--
 
-			<div class="form-row">
-				<span class="form-label full">Fax</span>
-				<span class="input-container">
-					<g:textField class="twofifty form-control"  name="fax" value="${prospectInstance?.fax}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-			-->
-
-			<div class="form-row">
-				<span class="form-label full">Email</span>
-				<span class="input-container">
-					<g:textField class="threehundred form-control"  name="email" value="${prospectInstance?.email}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-			
-			<!--
-			<div class="form-row">
-				<span class="form-label full">Website</span>
-				<span class="input-container">
-					<g:textField class="threehundred form-control"  name="website" value="${prospectInstance?.website}"/>
-				</span>
-				<br class="clear"/>
-			</div>
-			-->
-			
-			
 			<div class="form-row">
 			  	<label for="country" class="form-label full">Territory</label>
 				<span class="input-container">
@@ -250,28 +189,9 @@
 
 
 			
-			<%
-			String unverifiedSelected = prospectInstance?.verified ? "" : "selected"
-			String verifiedSelected = prospectInstance?.verified ? "selected" : ""
-			%>
-			
-			<div class="form-row">
-			  	<label for="country" class="form-label full">Verified</label>
-				<span class="input-container">
-					<select name="verified" class="form-control">
-						<option <%=unverifiedSelected%> value="false">False</option>
-						<option <%=verifiedSelected%> value="true">True</option>
-					</select>	
-				</span>
-				<br class="clear"/>
-			</div>
-
-			
-
-			
 			<div class="buttons-container">	
-				<g:link action="search">Search Prospects</g:link>&nbsp;&nbsp;
-				<g:submitButton name="create" class="btn btn-primary" value="Create Prospect" />		
+
+				<g:submitButton name="create" class="button retro" value="Create Prospect" />		
 				<br class="clear"/>
 			</div>
 
@@ -282,12 +202,11 @@
 	</div>
 	
 	
+	<br class="clear"/>
 
 </div>		
 
-<!--
-<div style="float:right; margin-top:80px; margin-right:100px; border-left:dashed 2px #ddd; height:430px;"></div>
--->
+<br class="clear"/>
 
 <script type="text/javascript" src="${resource(dir:'js/country_states.js')}"></script>
 

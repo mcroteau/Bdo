@@ -31,8 +31,15 @@ class ApplicationService {
 		//println "++++++++ Company Name : ${contextName} +++++++++++"	
 		return contextName
 	}
-	
-	
+
+	def getSiteName(){
+		if(!properties){
+			setProperties()
+		}
+		String siteName = properties.getProperty("site.name");
+		return siteName ? siteName : ""	
+	}
+
 	def getCompanyName(){
 		if(!properties){
 			setProperties()
