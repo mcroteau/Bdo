@@ -9,8 +9,9 @@ CHANGELOG.md
 .idea
 .gradle
 *.iml
-/build
+build
 Todo.md
+Notes.md
 
 # logs
 stacktrace.log

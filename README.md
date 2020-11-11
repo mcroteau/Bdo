@@ -1,22 +1,18 @@
-![Hilo Open Commerce](http://openabc.xyz/images/seal-icon.png)
+![Bdo Open Commerce](http://openabc.xyz/images/seal-icon.png)
 
-# Bdo (Seal) CRM
+# Bdo CRM
 
-#### Also known as Bdo
+Bdo is a simple Open Source Customer Relationship Management (CRM) package built for people and organizations who want to manage a small to mid sized sales team.
 
-Bdo (Seal) is a simple Open Source Customer Relationship Management (CRM) package built for people and organizations who want to manage a small to mid sized sales team.
+### What is Bdo if you are a business owner
 
+Bdo helps you manage your sales cycles, prospects, clients and customers. It allows you to measure your activities giving you a detailed view into your actions and how productive they are. Bdo also serves as a centralized location helping you manage everything regarding a prospect or client. Employ ABC to deploy, run and manage your instance or configure it yourself. It's as simple as a command (minimal setup version).
 
-### What is Bdo (Seal) if you are a business owner
-
-Seal helps you manage your sales cycles, prospects, clients and customers. It allows you to measure your activities giving you a detailed view into your actions and how productive they are. Bdo also serves as a centralized location helping you manage everything regarding a prospect or client. Employ ABC to deploy, run and manage your instance or configure it yourself. It's as simple as a command (minimal setup version).
-
-
-### What is Bdo (Seal) if you are a developer
+### What is Bdo if you are a developer
 
 Bdo is a J2EE project, it is:
 
-* Spring
+* Spring Boot
 * Hibernate
 * Gradle
 * Sitemesh
@@ -28,7 +24,7 @@ Grails is domain driven, leverages Groovy which is an abstraction of Java (you c
 
 https://www.apress.com/us/book/9781590599952 is a little dated, but gives a great run down of MVC (Model View Controller setup), Grails and why it is important. Not very many assumptions are made on how much you know, you will be starting from scratch with this book.
 
-Seal deploys to an Java application server of choice or can be run locally in an embedded container
+Bdo deploys to an Java application server of choice or can be run locally in an embedded container
 You can use many of the RDBM systems out there (Postgres, MySQL) and have been configured to work with Mongo and others.
 
 
